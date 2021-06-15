@@ -1,1 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import 'bootstrap/dist/css/bootstrap.css';
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    background-color: #343D45;
+    overflow-x: hidden;
+}
+
+.sidenav a {
+    /* padding: 6px 8px 6px 16px; */
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    /* margin-left: 0px; */
+    /* margin-right: 0px;  */
+    /* Same as the width of the sidenav */
+    font-size: 14px;
+    margin-right: 10px;
+    /* Increased text to enable scrolling */
+}
+
+.detail {
+    margin-top: 20px;
+    padding-left: 270px;
+    margin-right: 20px;
+}
+
+.toggle {
+    margin-right: 800px;
+    margin-top: 10px;
+}
+
+.justify-content-end {
+    background-color: #343D45;
+    display: flexbox;
+    height: 56px;
+}
+
+li .nav-link {
+    color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
